@@ -89,6 +89,7 @@ span{
 /* When you mouse over the container, fade in the overlay icon*/
 .main_image_container:hover .main_image_overlay {
   opacity: 1;
+  cursor: pointer;
 }
 
 
@@ -103,6 +104,7 @@ span{
 
 .title-card-text:hover{
   color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 .flex-container{
