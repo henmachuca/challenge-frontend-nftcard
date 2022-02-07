@@ -1,0 +1,160 @@
+body{
+  height: 100%;
+  margin: 0;
+  background-color: hsl(217, 54%, 11%);
+}
+
+main{
+  background-color: hsl(216, 50%, 16%);
+  width: 18%;
+  border-radius: 10px;
+  margin: 150px auto;
+  padding-top: 20px;
+}
+
+h1{
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+p{
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(215, 32%, 27%);
+  color: hsl(215, 51%, 70%);
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+hr{
+  border-top: 1px solid hsl(215, 32%, 27%);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin: 5px auto;
+}
+
+span{
+  color: white;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.main_image_container{
+  position: relative;
+  max-width: 400px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Make the image to responsive */
+.main_image{
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  margin: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.main_image_overlay {
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgb(0, 255, 247, 0.5);
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.main_image_icon{
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.main_image_container:hover .main_image_overlay {
+  opacity: 1;
+}
+
+
+.inner-card{
+  width: 84%;
+  margin: 16px auto 0 auto;
+}
+
+.card-text{
+  text-align: left;
+}
+
+.title-card-text:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-container{
+  display: flex;;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.money-icon {
+  width: 8px;
+}
+
+.money-text{
+  color: hsl(178, 100%, 50%);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.right-container{
+  display: flex;;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.clock-icon {
+  width: 18px;
+}
+
+.footer{
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.avatar-img{
+  width: 25px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.copyright{
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
